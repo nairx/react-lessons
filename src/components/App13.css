@@ -1,0 +1,9 @@
+.App13-Row {
+    display: flex
+}
+
+.App13-Row div {
+    background-color: orange;
+    margin: 10px;
+    padding: 10px;
+}
