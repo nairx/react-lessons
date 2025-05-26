@@ -3,16 +3,17 @@ import { useRef, useState } from "react";
 export default function App16() {
   const [num, setNum] = useState(0);
   const prevNum = useRef();
-  const msgRef = useRef()
+  const msgRef = useRef();
   useEffect(() => {
     prevNum.current = num;
   }, [num]);
 
-  if (prevNum.current > num) {
-    msgRef.current.style.color = "red"
-  }
-  else{
-     msgRef.current.style.color = "green"
+  if (prevNum.current) {
+    if (prevNum.current > num) {
+      msgRef.current.style.color = "red";
+    } else {
+      msgRef.current.style.color = "green";
+    }
   }
 
   return (
