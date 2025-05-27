@@ -7,7 +7,8 @@ export default function Header() {
       <h1 style={{ backgroundColor: "yellow", color: "blue" }}>
         React Lessons
       </h1>
-      <Link to="/">App1</Link>-<Link to="/app2">App2</Link>-
+      <Link to="/">App1</Link>-
+      <Link to="/app2">App2</Link>-
       <Link to="/app3">App3</Link>-
       <Link to="/app4">App4</Link>-
       <Link to="/app5">App5</Link>-
@@ -24,7 +25,8 @@ export default function Header() {
          <Link to="/app16">App16</Link>-
          <Link to="/app17">App17</Link>-
           <Link to="/app18">App18</Link>-
-           <Link to="/app19">App19</Link>
+           <Link to="/app19">App19</Link>-
+            <Link to="/app20">App20</Link>
     </div>
   );
 }
