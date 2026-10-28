@@ -6,7 +6,7 @@ export const AppContext = createContext()
 export default function App5() {
   const [count, setCount] = useState(5);
   return (
-    <AppContext.Provider value={{count}}>
+    <AppContext.Provider value={{count,setCount}}>
       <Child1 />
       <hr />
       <Child2 />
