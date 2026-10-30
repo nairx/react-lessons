@@ -1,10 +1,9 @@
-import React from "react";
-
-function Child({val}) {
-  console.log("Child Component Rendered");
-  return <h1>{val * val}</h1>;
-}
-
-export default React.memo(Child)
+import React, { useState } from "react";
+import { useCallback } from "react";
+ const Child = React.memo(({ onClick }) => {
+  console.log("Child rendered");
+  return <button onClick={onClick}>Click</button>;
+});
 
 
+export default Child
